@@ -82,7 +82,7 @@ L.Control.Scale = L.Control.extend({
 
 	_updateMetric: function (maxMeters) {
 		var meters = this._getRoundNum(maxMeters),
-		    label = meters < 1000 ? meters + ' m' : (meters / 1000) + ' km';
+		    label = meters < 1000 ? meters + ' м' : (meters / 1000) + ' км';
 
 		this._updateScale(this._mScale, label, meters / maxMeters);
 	},
